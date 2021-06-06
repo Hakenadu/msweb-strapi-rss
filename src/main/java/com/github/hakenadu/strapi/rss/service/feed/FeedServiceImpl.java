@@ -18,6 +18,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.github.hakenadu.strapi.rss.model.feed.AtomLink;
 import com.github.hakenadu.strapi.rss.model.feed.Rss;
 
 /**
@@ -28,6 +29,9 @@ public class FeedServiceImpl implements FeedService {
 
 	@Autowired
 	private Rss feed;
+
+	@Autowired
+	private AtomLink atomLink;
 
 	@Autowired
 	private ItemFactory itemFactory;
@@ -43,6 +47,8 @@ public class FeedServiceImpl implements FeedService {
 	 */
 	@PostConstruct
 	private void initialize() {
+		this.feed.getChannel().setAtomLink(atomLink);
+
 		final HttpRequest request = HttpRequest.newBuilder(strapiCollectionUrl)
 				.header(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE).build();
 

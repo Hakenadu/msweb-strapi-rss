@@ -1,5 +1,7 @@
 rss:
   channel:
+    atom-link:
+      href: ${RSS_CHANNEL_ATOM_LINK_HREF}
     title: ${RSS_CHANNEL_TITLE}
     description: ${RSS_CHANNEL_DESCRIPTION}
     link: ${RSS_CHANNEL_LINK}

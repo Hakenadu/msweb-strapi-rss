@@ -12,7 +12,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
  * <a href="https://www.w3schools.com/xml/xml_rss.asp">w3schools
  * documentation</a>)
  */
-@JacksonXmlRootElement
+@JacksonXmlRootElement(localName = "rss")
 @ConfigurationProperties("rss")
 @ConstructorBinding
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -20,6 +20,9 @@ public final class Rss {
 
 	@JacksonXmlProperty(isAttribute = true)
 	private final String version = "2.0";
+
+	@JacksonXmlProperty(isAttribute = true, localName = "xmlns:atom")
+	private final String atomNamespace = "http://www.w3.org/2005/Atom";
 
 	@JacksonXmlProperty
 	private final Channel channel;

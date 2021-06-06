@@ -1,7 +1,10 @@
 rss:
   channel:
+    atom-link:
+      href: https://api.mseiche.de/rss/feed
     image:
       url: https://mseiche.de/assets/icons/favicon-primary.svg
+      link: https://mseiche.de
       width: 48
       height: 48
       title: MSeiche Logo

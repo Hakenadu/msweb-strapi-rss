@@ -31,14 +31,22 @@ public final class Channel {
 	@JacksonXmlElementWrapper(useWrapping = false)
 	private List<Item> item;
 
+	@JacksonXmlProperty(localName = "atom:link")
+	private AtomLink atomLink;
+
 	public Channel(final Image image, final String title, final String description, final URI link,
 			final List<Item> item) {
 		super();
+
 		this.image = image;
 		this.title = title;
 		this.description = description;
 		this.link = link;
 		this.item = item;
+	}
+
+	public void setAtomLink(final AtomLink atomLink) {
+		this.atomLink = atomLink;
 	}
 
 	public void addItem(final Item item) {
