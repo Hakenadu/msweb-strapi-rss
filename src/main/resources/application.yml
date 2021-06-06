@@ -18,6 +18,7 @@ item-factory:
   author: ${ITEM_FACTORY_AUTHOR:}
   category: ${ITEM_FACTORY_CATEGORY:}
   enclosure: ${ITEM_FACTORY_ENCLOSURE:}
+  guid: ${ITEM_FACTORY_GUID:}
   source: ${ITEM_FACTORY_SOURCE:}
 strapi:
   model: ${STRAPI_MODEL}

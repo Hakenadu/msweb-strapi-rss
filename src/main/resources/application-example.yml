@@ -3,7 +3,7 @@ rss:
     atom-link:
       href: https://api.mseiche.de/rss/feed
     image:
-      url: https://mseiche.de/assets/icons/favicon-primary.svg
+      url: https://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png
       link: https://mseiche.de
       width: 48
       height: 48
@@ -16,7 +16,8 @@ strapi:
   model: post
   collection-url: https://strapi.mseiche.de/posts
 item-factory:
-  title: <</title>>
-  description: a post about <</title>>
+  guid: https://mseiche.de/blog/posts/<</id>>
   link: https://mseiche.de/blog/posts/<</id>>
+  title: <</title>>
+  description: <</description>>
   pub-date: <</created_at>>

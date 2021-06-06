@@ -7,11 +7,16 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
+@JsonPropertyOrder({ "atomLink", "image", "title", "description", "link", "item" })
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public final class Channel {
+
+	@JacksonXmlProperty(localName = "atom:link")
+	private AtomLink atomLink;
 
 	@JacksonXmlProperty
 	private Image image;
@@ -30,9 +35,6 @@ public final class Channel {
 
 	@JacksonXmlElementWrapper(useWrapping = false)
 	private List<Item> item;
-
-	@JacksonXmlProperty(localName = "atom:link")
-	private AtomLink atomLink;
 
 	public Channel(final Image image, final String title, final String description, final URI link,
 			final List<Item> item) {
