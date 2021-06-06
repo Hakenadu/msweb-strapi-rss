@@ -1,12 +1,12 @@
-package de.mseiche.msweb.rss;
+package com.github.hakenadu.strapi.rss;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 
-import de.mseiche.msweb.rss.model.feed.Rss;
-import de.mseiche.msweb.rss.service.feed.ItemFactory;
+import com.github.hakenadu.strapi.rss.model.feed.Rss;
+import com.github.hakenadu.strapi.rss.service.feed.ItemFactory;
 
 @EnableConfigurationProperties({ Rss.class, ItemFactory.class })
 @SpringBootApplication

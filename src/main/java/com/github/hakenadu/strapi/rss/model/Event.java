@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.model;
+package com.github.hakenadu.strapi.rss.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonCreator.Mode;

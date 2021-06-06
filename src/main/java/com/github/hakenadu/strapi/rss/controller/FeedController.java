@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.controller;
+package com.github.hakenadu.strapi.rss.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.mseiche.msweb.rss.model.feed.Rss;
-import de.mseiche.msweb.rss.service.feed.FeedService;
+import com.github.hakenadu.strapi.rss.model.feed.Rss;
+import com.github.hakenadu.strapi.rss.service.feed.FeedService;
 
 @RestController
 @RequestMapping("/feed")

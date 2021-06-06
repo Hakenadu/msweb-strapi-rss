@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.service.feed;
+package com.github.hakenadu.strapi.rss.service.feed;
 
 import java.io.IOException;
 import java.io.InputStream;

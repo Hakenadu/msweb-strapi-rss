@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.model.feed;
+package com.github.hakenadu.strapi.rss.model.feed;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;

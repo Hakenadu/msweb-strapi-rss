@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.service.feed;
+package com.github.hakenadu.strapi.rss.service.feed;
 
 import java.net.URI;
 import java.util.Optional;
@@ -9,8 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
 
 import com.fasterxml.jackson.databind.JsonNode;
-
-import de.mseiche.msweb.rss.model.feed.Item;
+import com.github.hakenadu.strapi.rss.model.feed.Item;
 
 @ConstructorBinding
 @ConfigurationProperties("item-factory")

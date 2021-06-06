@@ -1,12 +1,12 @@
-package de.mseiche.msweb.rss.service.events;
+package com.github.hakenadu.strapi.rss.service.events;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import de.mseiche.msweb.rss.model.Event;
-import de.mseiche.msweb.rss.service.feed.FeedService;
+import com.github.hakenadu.strapi.rss.model.Event;
+import com.github.hakenadu.strapi.rss.service.feed.FeedService;
 
 @Service
 public class EventsServiceImpl implements EventsService {

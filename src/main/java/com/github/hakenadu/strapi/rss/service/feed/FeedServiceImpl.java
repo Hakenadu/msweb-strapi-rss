@@ -1,4 +1,4 @@
-package de.mseiche.msweb.rss.service.feed;
+package com.github.hakenadu.strapi.rss.service.feed;
 
 import java.io.IOException;
 import java.net.URI;
@@ -18,8 +18,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
-import de.mseiche.msweb.rss.model.feed.Rss;
+import com.github.hakenadu.strapi.rss.model.feed.Rss;
 
 /**
  * this class is a monitor!
