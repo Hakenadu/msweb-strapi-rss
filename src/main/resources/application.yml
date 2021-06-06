@@ -1,0 +1,21 @@
+rss:
+  channel:
+    title: ${RSS_CHANNEL_TITLE}
+    description: ${RSS_CHANNEL_DESCRIPTION}
+    link: ${RSS_CHANNEL_LINK}
+    image:
+      url: ${RSS_CHANNEL_IMAGE_URL:#{null}}
+      width: ${RSS_CHANNEL_IMAGE_WIDTH:#{null}}
+      height: ${RSS_CHANNEL_IMAGE_HEIGHT:#{null}}
+      title: ${RSS_CHANNEL_IMAGE_TITLE:#{null}}
+      description: ${RSS_CHANNEL_IMAGE_DESCRIPTION:#{null}}
+item-factory:
+  title-field: ${ITEM_FACTORY_TITLE}
+  description: ${ITEM_FACTORY_DESCRIPTION}
+  link: ${ITEM_FACTORY_LINK}
+strapi:
+  model: ${STRAPI_MODEL}
+  collection-url: ${STRAPI_COLLECTION_URL}
+events:
+  username: ${EVENTS_USERNAME:#{null}}
+  password: ${EVENTS_PASSWORD:#{null}}

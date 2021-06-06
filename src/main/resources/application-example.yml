@@ -1,0 +1,18 @@
+rss:
+  channel:
+    image:
+      url: https://mseiche.de/assets/icons/favicon-primary.svg
+      width: 48
+      height: 48
+      title: MSeiche Logo
+      description: Manuel Seiche's Website Logo
+    title: Manuel Seiche's Blog
+    description: On this page I am posting about some implementation stuff. Because I'm much more of a developer than an author, you'll often see code samples or even interactive UI components for demonstration purposes.
+    link: https://mseiche.de/blog
+strapi:
+  model: post
+  collection-url: https://strapi.mseiche.de/posts
+item-factory:
+  title: <</title>>
+  description: a post about <</title>>
+  link: https://mseiche.de/blog/posts/<</id>>
