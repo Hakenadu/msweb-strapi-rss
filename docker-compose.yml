@@ -1,0 +1,25 @@
+version: '3'
+services:
+  strapi-rss-feed-provider:
+    image: hakenadu/strapi-rss-feed-provider
+    container_name: strapi-rss-feed-provider
+    environment:
+      RSS_CHANNEL_ATOM_LINK_HREF: https://api.mseiche.de/rss/feed
+      RSS_CHANNEL_TITLE: Manuel Seiche's Blog
+      RSS_CHANNEL_DESCRIPTION: On this page I am posting about some implementation stuff. Because I'm much more of a developer than an author, you'll often see code samples or even interactive UI components for demonstration purposes.
+      RSS_CHANNEL_LINK: https://mseiche.de/blog
+      RSS_CHANNEL_IMAGE_URL: https://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png
+      RSS_CHANNEL_IMAGE_WIDTH: 48
+      RSS_CHANNEL_IMAGE_HEIGHT: 48
+      RSS_CHANNEL_IMAGE_TITLE: MSeiche Logo
+      RSS_CHANNEL_IMAGE_DESCRIPTION: Manuel Seiche's Website Logo
+      STRAPI_MODEL: post
+      STRAPI_COLLECTION_URL: https://strapi.mseiche.de/posts
+      ITEM_FACTORY_GUID: https://mseiche.de/blog/posts/<</id>>
+      ITEM_FACTORY_LINK: https://mseiche.de/blog/posts/<</id>>
+      ITEM_FACTORY_TITLE: <</title>>
+      ITEM_FACTORY_DESCRIPTION: <</description>>
+    ports:
+    - 8080:8080
+    build:
+      context: ./

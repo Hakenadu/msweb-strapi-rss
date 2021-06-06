@@ -12,14 +12,15 @@ rss:
       title: ${RSS_CHANNEL_IMAGE_TITLE:}
       description: ${RSS_CHANNEL_IMAGE_DESCRIPTION:}
 item-factory:
+  guid: ${ITEM_FACTORY_GUID:}
+  link: ${ITEM_FACTORY_LINK}
   title: ${ITEM_FACTORY_TITLE}
   description: ${ITEM_FACTORY_DESCRIPTION}
-  link: ${ITEM_FACTORY_LINK}
   author: ${ITEM_FACTORY_AUTHOR:}
   category: ${ITEM_FACTORY_CATEGORY:}
   enclosure: ${ITEM_FACTORY_ENCLOSURE:}
-  guid: ${ITEM_FACTORY_GUID:}
   source: ${ITEM_FACTORY_SOURCE:}
+  pub-date: ${ITEM_FACTORY_PUB_DATE:<</created_at>>}
 strapi:
   model: ${STRAPI_MODEL}
   collection-url: ${STRAPI_COLLECTION_URL}

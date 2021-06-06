@@ -1,0 +1,8 @@
+docker-compose.yml
+Dockerfile
+.settings
+.project
+.classpath
+.gitignore
+bin
+target
