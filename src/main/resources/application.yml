@@ -10,6 +10,7 @@ rss:
       width: ${RSS_CHANNEL_IMAGE_WIDTH:}
       height: ${RSS_CHANNEL_IMAGE_HEIGHT:}
       title: ${RSS_CHANNEL_IMAGE_TITLE:}
+      link: ${RSS_CHANNEL_IMAGE_LINK:}
       description: ${RSS_CHANNEL_IMAGE_DESCRIPTION:}
 item-factory:
   guid: ${ITEM_FACTORY_GUID:}

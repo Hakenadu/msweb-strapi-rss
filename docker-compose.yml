@@ -12,6 +12,7 @@ services:
       RSS_CHANNEL_IMAGE_WIDTH: 48
       RSS_CHANNEL_IMAGE_HEIGHT: 48
       RSS_CHANNEL_IMAGE_TITLE: MSeiche Logo
+      RSS_CHANNEL_IMAGE_LINK: https://mseiche.de
       RSS_CHANNEL_IMAGE_DESCRIPTION: Manuel Seiche's Website Logo
       STRAPI_MODEL: post
       STRAPI_COLLECTION_URL: https://strapi.mseiche.de/posts
