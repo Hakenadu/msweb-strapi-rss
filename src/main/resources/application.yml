@@ -6,18 +6,22 @@ rss:
     description: ${RSS_CHANNEL_DESCRIPTION}
     link: ${RSS_CHANNEL_LINK}
     image:
-      url: ${RSS_CHANNEL_IMAGE_URL:#{null}}
-      width: ${RSS_CHANNEL_IMAGE_WIDTH:#{null}}
-      height: ${RSS_CHANNEL_IMAGE_HEIGHT:#{null}}
-      title: ${RSS_CHANNEL_IMAGE_TITLE:#{null}}
-      description: ${RSS_CHANNEL_IMAGE_DESCRIPTION:#{null}}
+      url: ${RSS_CHANNEL_IMAGE_URL:}
+      width: ${RSS_CHANNEL_IMAGE_WIDTH:}
+      height: ${RSS_CHANNEL_IMAGE_HEIGHT:}
+      title: ${RSS_CHANNEL_IMAGE_TITLE:}
+      description: ${RSS_CHANNEL_IMAGE_DESCRIPTION:}
 item-factory:
-  title-field: ${ITEM_FACTORY_TITLE}
+  title: ${ITEM_FACTORY_TITLE}
   description: ${ITEM_FACTORY_DESCRIPTION}
   link: ${ITEM_FACTORY_LINK}
+  author: ${ITEM_FACTORY_AUTHOR:}
+  category: ${ITEM_FACTORY_CATEGORY:}
+  enclosure: ${ITEM_FACTORY_ENCLOSURE:}
+  source: ${ITEM_FACTORY_SOURCE:}
 strapi:
   model: ${STRAPI_MODEL}
   collection-url: ${STRAPI_COLLECTION_URL}
 events:
-  username: ${EVENTS_USERNAME:#{null}}
-  password: ${EVENTS_PASSWORD:#{null}}
+  username: ${EVENTS_USERNAME:}
+  password: ${EVENTS_PASSWORD:}

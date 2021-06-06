@@ -19,3 +19,4 @@ item-factory:
   title: <</title>>
   description: a post about <</title>>
   link: https://mseiche.de/blog/posts/<</id>>
+  pub-date: <</created_at>>
