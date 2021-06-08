@@ -18,7 +18,7 @@ services:
       RSS_CHANNEL_TITLE: Manuel Seiche's Blog
       RSS_CHANNEL_DESCRIPTION: On this page I am posting about some implementation stuff. Because I'm much more of a developer than an author, you'll often see code samples or even interactive UI components for demonstration purposes.
       RSS_CHANNEL_LINK: https://mseiche.de/blog
-      RSS_CHANNEL_IMAGE_URL: https://strapi.mseiche.dehttps://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png
+      RSS_CHANNEL_IMAGE_URL: https://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png
       RSS_CHANNEL_IMAGE_WIDTH: 48
       RSS_CHANNEL_IMAGE_HEIGHT: 48
       RSS_CHANNEL_IMAGE_TITLE: MSeiche Logo
@@ -45,7 +45,7 @@ services:
   <channel>
     <atom:link href="https://api.mseiche.de/rss/feed" rel="self" type="application/rss+xml"/>
     <image>
-      <url>https://strapi.mseiche.dehttps://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png</url>
+      <url>https://strapi.mseiche.de/uploads/favicon_primary_21e9ac0793.png</url>
       <title>MSeiche Logo</title>
       <description>Manuel Seiche's Website Logo</description>
       <link>https://mseiche.de</link>
